@@ -7,7 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{71
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory_Rip_LazyLoading", "Factory_Rip_LazyLoading", "{70BDC194-94C2-4619-A798-FFB51B0BAA53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerProjectPhase1", "Patterns\Factory_Rip_LazyLoading\CustomerProjectPhase1\CustomerProjectPhase1.csproj", "{AB9FABBC-A23F-4427-9A60-97A28AD0A84F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddleLayer", "Patterns\Factory_Rip_LazyLoading\CustomerProjectPhase1\MiddleLayer.csproj", "{AB9FABBC-A23F-4427-9A60-97A28AD0A84F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsCustomer", "patterns\Factory_Rip_LazyLoading\WinFormsCustomer\WinFormsCustomer.csproj", "{F3BA35CA-1B1A-4ECD-AE1A-D9239C18A72E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryCustomer", "Patterns\Factory_Rip_LazyLoading\FactoryCustomer\FactoryCustomer.csproj", "{5711F23C-1557-4159-9D56-69777DB94EAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,14 @@ Global
 		{AB9FABBC-A23F-4427-9A60-97A28AD0A84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9FABBC-A23F-4427-9A60-97A28AD0A84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9FABBC-A23F-4427-9A60-97A28AD0A84F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3BA35CA-1B1A-4ECD-AE1A-D9239C18A72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BA35CA-1B1A-4ECD-AE1A-D9239C18A72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BA35CA-1B1A-4ECD-AE1A-D9239C18A72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BA35CA-1B1A-4ECD-AE1A-D9239C18A72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5711F23C-1557-4159-9D56-69777DB94EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5711F23C-1557-4159-9D56-69777DB94EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5711F23C-1557-4159-9D56-69777DB94EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5711F23C-1557-4159-9D56-69777DB94EAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +38,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{70BDC194-94C2-4619-A798-FFB51B0BAA53} = {718FE3A8-2084-45C3-8CA1-EE182BDA64F0}
 		{AB9FABBC-A23F-4427-9A60-97A28AD0A84F} = {70BDC194-94C2-4619-A798-FFB51B0BAA53}
+		{F3BA35CA-1B1A-4ECD-AE1A-D9239C18A72E} = {70BDC194-94C2-4619-A798-FFB51B0BAA53}
+		{5711F23C-1557-4159-9D56-69777DB94EAA} = {70BDC194-94C2-4619-A798-FFB51B0BAA53}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B56C9F8-94ED-4836-BA43-E2DCE99FF991}

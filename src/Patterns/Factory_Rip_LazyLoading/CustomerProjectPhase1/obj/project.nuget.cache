@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kbWgLJSBnckdPtM23m+VYZhr27ndZ++5x5CUweBqT4rYHiI2NfY2VlpDe8k8/qa0XNDMIfy2jq7zflePuuYiyw==",
+  "dgSpecHash": "p2zj2P4VEVqBzBoLPYPL0v9nQonSbZeI9B5sSs3E6Rnw3JXk4xltPe/lMkMlXWYxA//GkvnyhFG92wXqyiq6rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raj.kumar\\Desktop\\Design-Patterns\\src\\Patterns\\Factory_Rip_LazyLoading\\CustomerProjectPhase1\\CustomerProjectPhase1.csproj",
+  "projectFilePath": "C:\\Users\\raj.kumar\\Desktop\\Design-Patterns\\src\\Patterns\\Factory_Rip_LazyLoading\\CustomerProjectPhase1\\MiddleLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

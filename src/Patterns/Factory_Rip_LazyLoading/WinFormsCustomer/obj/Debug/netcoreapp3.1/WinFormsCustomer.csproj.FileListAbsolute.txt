@@ -19,3 +19,6 @@ C:\Users\raj.kumar\Desktop\Design-Patterns\src\patterns\Factory_Rip_LazyLoading\
 C:\Users\raj.kumar\Desktop\Design-Patterns\src\patterns\Factory_Rip_LazyLoading\WinFormsCustomer\obj\Debug\netcoreapp3.1\WinFormsCustomer.dll
 C:\Users\raj.kumar\Desktop\Design-Patterns\src\patterns\Factory_Rip_LazyLoading\WinFormsCustomer\obj\Debug\netcoreapp3.1\WinFormsCustomer.pdb
 C:\Users\raj.kumar\Desktop\Design-Patterns\src\patterns\Factory_Rip_LazyLoading\WinFormsCustomer\obj\Debug\netcoreapp3.1\WinFormsCustomer.genruntimeconfig.cache
+C:\Users\raj.kumar\Desktop\Design-Patterns\src\patterns\Factory_Rip_LazyLoading\WinFormsCustomer\bin\Debug\netcoreapp3.1\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\raj.kumar\Desktop\Design-Patterns\src\patterns\Factory_Rip_LazyLoading\WinFormsCustomer\bin\Debug\netcoreapp3.1\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\raj.kumar\Desktop\Design-Patterns\src\patterns\Factory_Rip_LazyLoading\WinFormsCustomer\bin\Debug\netcoreapp3.1\Microsoft.Practices.Unity.dll

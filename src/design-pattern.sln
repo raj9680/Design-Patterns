@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{718FE3A8-2084-45C3-8CA1-EE182BDA64F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory_Rip_LazyLoading", "Factory_Rip_LazyLoading", "{70BDC194-94C2-4619-A798-FFB51B0BAA53}"
+	ProjectSection(SolutionItems) = preProject
+		CustomerProjectPhase1.txt = CustomerProjectPhase1.txt
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddleLayer", "Patterns\Factory_Rip_LazyLoading\CustomerProjectPhase1\MiddleLayer.csproj", "{AB9FABBC-A23F-4427-9A60-97A28AD0A84F}"
 EndProject

@@ -7,7 +7,11 @@ namespace WinFormCustomer
 {
     public partial class FrmCustomer : Form
     {
-        private CustomerBase cust = null;
+        // private Customer cust = null; // X
+        // private Lead lead = null;     // X
+
+        // Create one class reference instead of creating two class references   1
+        private CustomerBase cust= null;
         public FrmCustomer()
         {
             InitializeComponent();
@@ -20,30 +24,48 @@ namespace WinFormCustomer
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cust = Class1.Create(comboBox1.Text);
+            
+           // Moving that block to FactoryCustomer project to achieve centralised object creation  // 2
+           
+           // if(comboBox1.Text == "Customer")
+           // {
+           //     cust = new Customer();
+           // }
+           // else
+           // {
+           //     // lead = new Lead();    
+           //     cust = new Lead();     1
+           // }
+           
+            // creating object dynamically from FactoryCustomer project reference
+            cust = Factory.Create(comboBox1.Text);
         }
 
         private void SetCustomer()
         {
             cust.CustomerName = textBox2.Text;
             cust.PhoneNumber = textBox4.Text;
-            cust.BillDate = Convert.ToDateTime(textBox3.Text);
+            cust.BillDate = textBox3.Text;
             cust.BillAmount = Convert.ToDecimal(textBox1.Text);
             cust.Address = richTextBox1.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                SetCustomer();
-                cust.Validate();
-            }
-            catch (Exception ex)
-            {
+            /// X
+            //  if(comboBox1.Text == "Customer")
+            //  {
+            //     cust.Validate();
+            //  }
+            //  else
+            //  {
+            //     lead.Validate();
+            //  }
 
-                throw new Exception(ex.Message);
-            }
+            SetCustomer();
+            // Instead of X
+            cust.Validate();
+            
             
         }
 

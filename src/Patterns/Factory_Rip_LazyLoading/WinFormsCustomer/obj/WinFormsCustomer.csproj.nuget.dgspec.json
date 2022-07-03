@@ -97,12 +97,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "Unity": {
-              "target": "Package",
-              "version": "[3.5.1404, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ValidationAlorithms/1.0.0": {
+        "dependencies": {
+          "InterfaceCustomer": "1.0.0"
+        },
+        "runtime": {
+          "ValidationAlorithms.dll": {}
+        }
+      },
+      "InterfaceCustomer/1.0.0": {
+        "runtime": {
+          "InterfaceCustomer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ValidationAlorithms/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InterfaceCustomer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

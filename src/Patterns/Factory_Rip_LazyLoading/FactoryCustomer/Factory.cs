@@ -1,45 +1,44 @@
-﻿using MiddleLayer;
-using System;
-using System.Collections.Generic;
+﻿using InterfaceCustomer;
+using Microsoft.Practices.Unity;
+using MiddleLayer;
+using ValidationAlorithms;
 
 namespace FactoryCustomer
 {
-    public static class Factory // Simple Factory pattern :- centralization of object creation
+    public static class Factory  // converting to unity container approach
     {
-        private static Dictionary<string, CustomerBase> custs = new Dictionary<string, CustomerBase>();  // xx
-        
-        // Moved this section to Create method to create the objects only when needed
-        
-        ///  static Factory()
-        ///  {
-        ///      custs.Add("Customer", new Customer());
-        ///      custs.Add("Lead", new Lead());
-        ///  }
+        /// private static Dictionary<string, CustomerBase> custs = new Dictionary<string, CustomerBase>();
+        // Static dictionary collection has been replaced by unity container
+        private static IUnityContainer custs = null;
 
-        public static CustomerBase Create(string TypeCust)
+
+        ///public static CustomerBase Create(string TypeCust)
+        // Decoupled from MiddleLayer with InterfaceCustomer
+        public static ICustomer Create(string TypeCust)
         {
-            // Taken this section from WinFormCustomer project in order to achieve centralised object creation 1
-            // After our approach to remove multiple if else statements & it has been achieved by the creating a dictionary and assigning object cration as a value in constructor xx 2 & returning that in method
-            // But the problem in 2 is that object is getting created at runtime whether it is needed by application or not. To achieve this optimization we removed the ctor and moved that section inside create method based on requirement.3  XXX
-            ///  if(comboBox1.Text == "Customer")    xyz
-            ///  {
-            ///      cust = new Customer();
-            ///  }
-            ///  else
-            ///  {
-            ///     // lead = new Lead();    
-            ///      cust = new Lead();     1
-            ///  }
-
-            // Lazy load design pattern (load/create obj. when needed   opposite is Eager loading 3 - XXX
-            if (custs.Count == 0)
+            ///if (custs.Count == 0)
+            if (custs == null)
             {
-                custs.Add("Customer", new Customer());
-                custs.Add("Lead", new Lead());
+                ///custs.Add("Customer", new Customer());
+                ///custs.Add("Lead", new Lead());
+
+                custs = new UnityContainer();
+                // To add type into collection
+                //custs.RegisterType<CustomerBase, Customer>("Customer"); - 1
+                //custs.RegisterType<CustomerBase, Lead>("Lead"); -1
+
+                // Later we decoupled MiddleLayer with InterfaceCustomer
+                // Injected decoupled validation class/project -2
+                custs.RegisterType<ICustomer, Customer>("Customer", new InjectionConstructor(new CustomerValidationAll()));
+                custs.RegisterType<ICustomer, Lead>("Lead", new InjectionConstructor(new LeadValidation()));
             }
 
-            // RIP poly pattern -- Removing multiple if with polymorphism 2  xyz
-            return custs[TypeCust];
+            ///return custs[TypeCust];
+            // To get type from collection
+            //return custs.Resolve<CustomerBase>(TypeCust);
+
+            // Later we decoupled MiddleLayer with InterfaceCustomer
+            return custs.Resolve<ICustomer>(TypeCust);
         }
     }
 }

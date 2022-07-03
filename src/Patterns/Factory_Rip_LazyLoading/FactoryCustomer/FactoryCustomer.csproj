@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Unity" Version="3.5.1404" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CustomerProjectPhase1\MiddleLayer.csproj" />
+    <ProjectReference Include="..\ValidationAlorithms\ValidationAlorithms.csproj" />
   </ItemGroup>
 
 </Project>

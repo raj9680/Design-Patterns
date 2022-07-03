@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{71
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unity_Strategy_Ioc_Srp_Soc", "Unity_Strategy_Ioc_Srp_Soc", "{70BDC194-94C2-4619-A798-FFB51B0BAA53}"
 	ProjectSection(SolutionItems) = preProject
-		CustomerProjectPhase1.txt = CustomerProjectPhase1.txt
+		Unity_Strategy_Ioc_Srp_Soc.txt = Unity_Strategy_Ioc_Srp_Soc.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddleLayer", "Patterns\Factory_Rip_LazyLoading\CustomerProjectPhase1\MiddleLayer.csproj", "{AB9FABBC-A23F-4427-9A60-97A28AD0A84F}"
@@ -15,6 +15,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsCustomer", "patterns\Factory_Rip_LazyLoading\WinFormsCustomer\WinFormsCustomer.csproj", "{F3BA35CA-1B1A-4ECD-AE1A-D9239C18A72E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryCustomer", "Patterns\Factory_Rip_LazyLoading\FactoryCustomer\FactoryCustomer.csproj", "{5711F23C-1557-4159-9D56-69777DB94EAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceCustomer", "Patterns\Factory_Rip_LazyLoading\InterfaceCustomer\InterfaceCustomer.csproj", "{0498D1D8-5BE8-4094-B66B-252D29A3DE89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationAlorithms", "Patterns\Factory_Rip_LazyLoading\ValidationAlorithms\ValidationAlorithms.csproj", "{BD8348A1-5978-4423-8276-8C5A6A67E2C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +38,14 @@ Global
 		{5711F23C-1557-4159-9D56-69777DB94EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5711F23C-1557-4159-9D56-69777DB94EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5711F23C-1557-4159-9D56-69777DB94EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0498D1D8-5BE8-4094-B66B-252D29A3DE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0498D1D8-5BE8-4094-B66B-252D29A3DE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0498D1D8-5BE8-4094-B66B-252D29A3DE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0498D1D8-5BE8-4094-B66B-252D29A3DE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD8348A1-5978-4423-8276-8C5A6A67E2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8348A1-5978-4423-8276-8C5A6A67E2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8348A1-5978-4423-8276-8C5A6A67E2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8348A1-5978-4423-8276-8C5A6A67E2C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +55,8 @@ Global
 		{AB9FABBC-A23F-4427-9A60-97A28AD0A84F} = {70BDC194-94C2-4619-A798-FFB51B0BAA53}
 		{F3BA35CA-1B1A-4ECD-AE1A-D9239C18A72E} = {70BDC194-94C2-4619-A798-FFB51B0BAA53}
 		{5711F23C-1557-4159-9D56-69777DB94EAA} = {70BDC194-94C2-4619-A798-FFB51B0BAA53}
+		{0498D1D8-5BE8-4094-B66B-252D29A3DE89} = {70BDC194-94C2-4619-A798-FFB51B0BAA53}
+		{BD8348A1-5978-4423-8276-8C5A6A67E2C8} = {70BDC194-94C2-4619-A798-FFB51B0BAA53}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B56C9F8-94ED-4836-BA43-E2DCE99FF991}

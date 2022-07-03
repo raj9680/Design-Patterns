@@ -1,5 +1,5 @@
 ﻿using FactoryCustomer;
-using MiddleLayer;
+using InterfaceCustomer;
 using System;
 using System.Windows.Forms;
 
@@ -7,11 +7,8 @@ namespace WinFormCustomer
 {
     public partial class FrmCustomer : Form
     {
-        // private Customer cust = null; // X
-        // private Lead lead = null;     // X
-
-        // Create one class reference instead of creating two class references   1
-        private CustomerBase cust= null;
+        /// private CustomerBase cust= null;
+        private ICustomer cust = null;
         public FrmCustomer()
         {
             InitializeComponent();
@@ -24,21 +21,8 @@ namespace WinFormCustomer
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-           // Moving that block to FactoryCustomer project to achieve centralised object creation  // 2
-           
-           // if(comboBox1.Text == "Customer")
-           // {
-           //     cust = new Customer();
-           // }
-           // else
-           // {
-           //     // lead = new Lead();    
-           //     cust = new Lead();     1
-           // }
-           
-            // creating object dynamically from FactoryCustomer project reference
-            cust = Factory.Create(comboBox1.Text);
+           // creating object dynamically from FactoryCustomer project reference
+           cust = Factory.Create(comboBox1.Text);
         }
 
         private void SetCustomer()
@@ -52,21 +36,8 @@ namespace WinFormCustomer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /// X
-            //  if(comboBox1.Text == "Customer")
-            //  {
-            //     cust.Validate();
-            //  }
-            //  else
-            //  {
-            //     lead.Validate();
-            //  }
-
             SetCustomer();
-            // Instead of X
             cust.Validate();
-            
-            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

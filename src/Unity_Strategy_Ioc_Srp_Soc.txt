@@ -1,0 +1,8 @@
+===| Summary |===
+
+Part 1
+Converting from manual design pattern (Factory,Rip & LazyLoad) approach to Unity Container
+Removind manual dictionary with Unity collection type for adding & getting object refrences
+
+Part 2
+Decoupling MiddleLayer from WinFormsCustomer & FactoryCustomer project with InterfaceCustomer project

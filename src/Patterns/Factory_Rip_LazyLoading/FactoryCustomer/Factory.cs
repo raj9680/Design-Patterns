@@ -9,6 +9,7 @@ namespace FactoryCustomer
     {
         /// private static Dictionary<string, CustomerBase> custs = new Dictionary<string, CustomerBase>();
         // Static dictionary collection has been replaced by unity container
+        // UnityContainer implementations in detail: https://www.tutorialsteacher.com/ioc/register-and-resolve-in-unity-container
         private static IUnityContainer custs = null;
 
 
